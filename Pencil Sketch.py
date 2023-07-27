@@ -20,7 +20,8 @@ class PencilSketchConverter:
         self.y = (self.screen_height // 2) - (self.window_height // 2)
 
         # Load and set the background image
-        background_image = Image.open("/Users/saidlfagrouche/Downloads/hand-pencil-drawing-sketch-wallpaper-preview.jpg")
+        #backgroound image source: https://www.wallpaperflare.com/yellow-pencil-hand-drawing-sketch-writing-wood-material-wallpaper-vls
+        background_image = Image.open("background.jpg")
         background_image = background_image.resize((self.window_width, self.window_height), Image.ANTIALIAS)
         self.background_photo = ImageTk.PhotoImage(background_image)
         background_label = Label(self.window, image=self.background_photo)
